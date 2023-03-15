@@ -23,7 +23,8 @@ module.exports = {
       }),
       fontFamily: {
         dmsans: ["DM Sans", "sans-serif"],
-        montserrat: ["Montserrat", "sans-serif"]
+        montserrat: ["Montserrat", "sans-serif"],
+        dancingscript: ["Dancing Script", "sans-serif"],
       },
       content: {
         evolvetext: "url('./assets/EvolveText.png')",
