@@ -7,7 +7,6 @@ import { motion } from "framer-motion"
 import AnchorLink from "react-anchor-link-smooth-scroll"
 
 type Props = {
-    selectedPage: SelectedPage;
     setSelectedPage: (value: SelectedPage) => void;
 }
 
@@ -49,7 +48,7 @@ const Home = ({setSelectedPage}: Props) => {
                     </span>
                 </p>
                 <p className="mt-10 mb-10 text-md text-center md:text-start">
-                    Don't just praise towering things. Plains and hills are just as immortal.    
+                    "Don't just praise towering things. Plains and hills are just as immortal."   
                 </p>
             </motion.div>
             {/* CALL TO ACTIONS */}
