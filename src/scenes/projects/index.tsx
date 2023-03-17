@@ -22,7 +22,7 @@ const projects: Array<ProjectType> = [
     },
     {
         name: "Tico-easy task & time management",
-        tech: "Tech Stack: Next.js, React, styled-components, MongoDB, Mongoose, Jest, Next-auth",
+        tech: "Tech Stack: Next.js, React, MongoDB, Next-auth",
         link: "https://github.com/Mengzhen1992/capstone-project",
         image: project2, 
     },
@@ -50,7 +50,7 @@ const Projects = ({setSelectedPage}: Props) => {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.5}}
-                transition={{duration: 1}}
+                transition={{duration: 0.5}}
                 variants={{
                     hidden: {opacity:0, y: -50},
                     visible: {opacity:1, y: 0},
@@ -61,7 +61,7 @@ const Projects = ({setSelectedPage}: Props) => {
             {/* PROJECTS */}
             <div className='flex justify-center mt-20'>
                 <motion.div
-                    className='sm:grid sm:grid-cols-3 w-5/6 gap-8'
+                    className='sm:grid sm:grid-cols-3 md:w-5/6 gap-8'
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.5}}

@@ -15,7 +15,7 @@ const Home = ({setSelectedPage}: Props) => {
   const isAboveSmallScreens = useMediaQuery("(min-width:768px)");
 
   return (
-    <section id="home" className="md:flex md:justify-between md:items-center md:h-full gap-0 py-10 mx-auto w-5/6">
+    <section id="home" className="md:flex md:justify-between md:items-center h-full gap-0 py-10 mx-auto w-5/6">
         {/* IMAGE SECTION */}
         <div className="md:order-2 flex md:justify-end justify-center basis-4/5 z-10 mt-16 md:mt-32">
             {isAboveMediumScreens ? (
@@ -36,7 +36,7 @@ const Home = ({setSelectedPage}: Props) => {
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.5}}
                 /* the div must to be shown from 50% of it for this animation to run */
-                transition={{duration: 1}}
+                transition={{duration: 0.5}}
                 variants={{
                     hidden: {opacity:0, x: -50},
                     visible: {opacity:1, x: 0},
@@ -59,7 +59,7 @@ const Home = ({setSelectedPage}: Props) => {
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.5}}
                 /* the div must to be shown from 50% of it for this animation to run */
-                transition={{delay: 0.2, duration: 1}}
+                transition={{delay: 0.2, duration: 0.5}}
                 variants={{
                     hidden: {opacity:0, x: -50},
                     visible: {opacity:1, x: 0},
@@ -91,7 +91,7 @@ const Home = ({setSelectedPage}: Props) => {
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.5}}
                 /* the div must to be shown from 50% of it for this animation to run */
-                transition={{delay: 0.4, duration: 1}}
+                transition={{delay: 0.4, duration: 0.5}}
                 variants={{
                     hidden: {opacity:0, x: -50},
                     visible: {opacity:1, x: 0},

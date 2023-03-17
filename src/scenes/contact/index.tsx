@@ -26,7 +26,7 @@ const Contact = ({setSelectedPage}: Props) => {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.5}}
-                transition={{duration: 1}}
+                transition={{duration: 0.5}}
                 variants={{
                     hidden: {opacity:0, x: -50},
                     visible: {opacity:1, x: 0},
@@ -40,7 +40,7 @@ const Contact = ({setSelectedPage}: Props) => {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.5}}
-                transition={{duration: 1}}
+                transition={{duration: 0.5}}
                 variants={{
                     hidden: {opacity:0, y: 50},
                     visible: {opacity:1, y: 0},
@@ -69,7 +69,6 @@ const Contact = ({setSelectedPage}: Props) => {
                                 {errors.email.type === "pattern" && "invalid email address."}
                             </p>
                         )}
-
                         <textarea className={inputStyles} rows={4} cols={50} placeholder="MESSAGE" {...register("message", {
                             required: true,
                             maxLength: 2000,
@@ -89,7 +88,7 @@ const Contact = ({setSelectedPage}: Props) => {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.5}}
-                transition={{delay: 0.5, duration: 1}}
+                transition={{delay: 0.2, duration: 0.5}}
                 variants={{
                     hidden: {opacity:0, y: 50},
                     visible: {opacity:1, y: 0},
