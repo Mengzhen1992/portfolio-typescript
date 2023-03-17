@@ -10,3 +10,10 @@ export interface ImageType {
   location: string;
   image: string;
 }
+
+export interface ProjectType {
+  name: string;
+  tech: string;
+  link: string;
+  image: string;
+}

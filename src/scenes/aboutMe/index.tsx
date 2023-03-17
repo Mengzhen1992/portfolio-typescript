@@ -27,7 +27,7 @@ const photographs: Array<ImageType> = [
     },
     {
         date: "05.2022",
-        location: "Königsee",
+        location: "Koenigsee",
         image: image4,
     },
     {
@@ -37,7 +37,7 @@ const photographs: Array<ImageType> = [
     },
     {
         date: "05.2022",
-        location: "Königsee",
+        location: "Koenigsee",
         image: image6,
     }
 ]
@@ -48,7 +48,7 @@ type Props = {
 
 const OurClasses = ({setSelectedPage}: Props) => {
   return (
-    <section id='aboutme' className='w-full bg-primary-100 py-40'>
+    <section id='aboutme' className='w-full bg-primary-100 py-28'>
         <motion.div
             onViewportEnter={() => setSelectedPage(SelectedPage.AboutMe)}        
         >
@@ -66,14 +66,17 @@ const OurClasses = ({setSelectedPage}: Props) => {
             >
                 <div className='md:w-full'>
                     <HText>ABOUT ME</HText>
-                    <p className='pt-6 pb-3'>
-                    Hi, I'm Mengzhen Liao currently living in Munich and looking to shift into frontend development. I am an environmental engineer graduated from Kassel University, but I have always had a passion for coding and web development. One of the things that drew me to frontend development is the opportunity to combine creativity and problem-solving. I am excited about the prospect of using my design skills to create engaging user interfaces that are not only visually appealing but also functional and intuitive. 
+                    <p className='pt-8 pb-3 text-lg'>
+                    Hi, I'm Mengzhen Liao currently living in Munich and looking to shift into frontend development.  
                     </p>
-                    <p className='py-3'>
+                    <p className='py-3 text-lg'>
+                    I am an environmental engineer graduated from Kassel University, but I have always had a passion for coding and web development. One of the things that drew me to frontend development is the opportunity to combine creativity and problem-solving. I am excited about the prospect of using my design skills to create engaging user interfaces that are not only visually appealing but also functional and intuitive.    
+                    </p>
+                    <p className='py-3 text-lg'>
                     I have already begun to build my knowledge of web development languages such as HTML, CSS, JavaScript and framework react. Last year I successfully completed the intensive and very practical Bootcamp Web Development from neue fische, gained a lot of practical experience and have been actively seeking opportunities to further develop my skills through online courses, tutorials and personal projects.
                     </p>
-                    <p className='py-3'>
-                    Other than coding, I spend my free time taking photos. I love capturing the beauty of the world around us and telling stories through my photos. Below are some photos I took last year.   
+                    <p className='py-3 text-lg'>
+                    Other than coding, I spend some of my free time taking photos. I love capturing the beauty of the world around us and telling stories through my photos. Below are some photos I took last year.   
                     </p>
                 </div>
             </motion.div>
