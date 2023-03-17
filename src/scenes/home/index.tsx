@@ -95,7 +95,7 @@ const Home = ({setSelectedPage}: Props) => {
                     visible: {opacity:1, x: 0},
                 }}
             >
-                <div className="flex justify-center md:justify-start my-8 gap-16">
+                <div className="flex justify-center md:justify-start my-8 gap-12">
                     <a
                         className="hover:opacity-50 transition duration-500"
                         href="https://github.com/Mengzhen1992"
