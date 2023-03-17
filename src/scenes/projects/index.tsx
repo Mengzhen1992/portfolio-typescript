@@ -17,7 +17,7 @@ const projects: Array<ProjectType> = [
     {
         name: "Portfolio",
         tech: "Tech Stack: React, TypeScript, Tailwind CSS, Framer-Motion, Vite",
-        link: "https://github.com/Mengzhen1992/capstone-project",
+        link: "https://github.com/Mengzhen1992/portfolio-typescript",
         image: project1,  
     },
     {
