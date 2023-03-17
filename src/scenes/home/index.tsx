@@ -12,6 +12,7 @@ type Props = {
 
 const Home = ({setSelectedPage}: Props) => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1205px)");
+  const isAboveSmallScreens = useMediaQuery("(min-width:768px)");
 
   return (
     <section id="home" className="md:flex md:justify-between md:items-center md:h-full gap-0 py-10 mx-auto w-5/6">
@@ -83,7 +84,8 @@ const Home = ({setSelectedPage}: Props) => {
                     </div>
                 </AnchorLink>
             </motion.div>
-            <motion.div
+            {isAboveSmallScreens && (
+                <motion.div
                 className="flex mt-5 justify-center md:justify-start"
                 initial="hidden"
                 whileInView="visible"
@@ -94,26 +96,27 @@ const Home = ({setSelectedPage}: Props) => {
                     hidden: {opacity:0, x: -50},
                     visible: {opacity:1, x: 0},
                 }}
-            >
-                <div className="flex justify-center md:justify-start my-8 gap-12">
-                    <a
-                        className="hover:opacity-50 transition duration-500"
-                        href="https://github.com/Mengzhen1992"
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        <img alt="github-link" src={Github} />
-                    </a>
-                    <a
-                        className="hover:opacity-50 transition duration-500"
-                        href="https://www.instagram.com/mon__ki/"
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        <img alt="instagram-link" src={Instagram} />
-                    </a>
-                </div>
-            </motion.div>
+                >
+                    <div className="flex justify-center md:justify-start my-8 gap-12">
+                        <a
+                            className="hover:opacity-50 transition duration-500"
+                            href="https://github.com/Mengzhen1992"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            <img alt="github-link" src={Github} />
+                        </a>
+                        <a
+                            className="hover:opacity-50 transition duration-500"
+                            href="https://www.instagram.com/mon__ki/"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            <img alt="instagram-link" src={Instagram} />
+                        </a>
+                    </div>
+                </motion.div>   
+            )}   
         </motion.div>
     </section>
   )
