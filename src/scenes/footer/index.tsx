@@ -8,7 +8,7 @@ const Footer = (props: Props) => {
   return (
     <footer className="h-60 bg-gray-100 flex items-center">
         <div className="w-5/6 mx-auto">
-            <div className="flex justify-center md:justify-start my-8 gap-12">
+            <div className="flex justify-start md:justify-start my-8 gap-12">
                 <a
                     className="hover:opacity-50 transition duration-500"
                     href="https://github.com/Mengzhen1992"
