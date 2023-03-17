@@ -42,7 +42,7 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}: Props) => {
                     setSelectedPage={setSelectedPage}
                     />
                 </div>) : (
-                    <button className="rounded-full bg-gray-100 p-2" onClick={()=>setIsMenuToggled(!isMenuToggled)}>
+                    <button className="rounded-full bg-gradient-rainblue p-2" onClick={()=>setIsMenuToggled(!isMenuToggled)}>
                         <Bars3Icon className="h-6 w-6"/>
                     </button>
                 )}
